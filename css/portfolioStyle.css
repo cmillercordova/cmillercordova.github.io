@@ -1,0 +1,65 @@
+body {
+    background-image: url("/image/background_0001_Layer%203.jpg");
+    margin: 2vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vh;
+    line-height: 5.5vh;
+    color: #ffffff;
+}
+img {
+    height: 100%;
+}
+#grid {
+    writing-mode: vertical-lr;
+    display: grid;
+    grid-gap: 2vh; 
+    grid-auto-rows: 1.52vh;
+    grid-template-columns: repeat(5, 17.6vh);
+    grid-auto-flow: row;
+    text-align: center;
+}
+
+#grid > div {
+    overflow: hidden;
+}
+.span{
+    grid-row-end: span 10; 
+}
+.span2{
+    grid-row-end: span 9; 
+}
+.span3{
+    grid-row-end: span 8; 
+}
+.span4{
+    grid-row-end: span 7; 
+}
+.span5{
+    grid-row-end: span 6; 
+}
+.span6{
+    grid-row-end: span 5; 
+}
+.span7{
+    grid-row-end: span 4; 
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

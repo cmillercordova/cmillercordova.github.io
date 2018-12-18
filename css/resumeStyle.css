@@ -1,0 +1,381 @@
+/*CSS Grid*/
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+.item6 { grid-area: f; }
+.item7 { grid-area: g; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'a b b c c d d'
+        'a e e e f f f'
+        'a g g g g g g';
+    grid-gap: 10px;
+    width: 100%;
+}
+.grid-container > div {
+    background-color: magenta;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.9;
+}
+body {
+    background-image: url("/image/background_0000_Layer%204.jpg");
+}
+p {
+    color:yellow;
+    font-size: 14px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    font-family: 'Poppins', sans-serif;
+}
+p:hover {
+    color: cyan;
+    font-weight: bold;
+}
+b {
+    font-size: 20px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    font-family: 'Staatliches', cursive;
+}
+b:hover {
+    color: cyan;
+    font-weight: bold;
+}
+.link {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Headder: Contact, Social Media, and Awards*/
+.logo {
+    width: 150px;
+    height: 150px;
+}
+.name{
+    position: relative;
+    left: 1%;
+    bottom: 19px;
+    font-size: 20px
+}
+.headline {
+    color: yellow;
+    position: relative;
+    top: 5px;
+}
+.contact {
+    background-color: darkmagenta;
+    height: 90px;
+    position: relative;
+    top: -3%;
+}
+.info {
+    position: relative;
+    top: 15px;
+    color: yellow;
+    text-decoration: none;
+}
+.info:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: cyan;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.info:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.social {
+    background-color: darkmagenta;
+    height: 170px;
+    position: relative;
+    top: -3%;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    height: 
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: 18px;
+    top: 12px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    
+}
+.fa:hover {
+    background-color: magenta;
+}
+
+.fa-facebook {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-facebook:hover {
+    color: cyan;
+}
+
+.fa-twitter {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-twitter:hover {
+    color: cyan;
+}
+
+.fa-google {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-google:hover {
+    color: cyan;
+}
+
+.fa-youtube {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-youtube:hover {
+    color: cyan;
+}
+
+.fa-instagram {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-instagram:hover {
+    color: cyan;
+}
+
+.fa-github {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-github:hover {
+    color: cyan;
+}
+
+.fa-codepen {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-codepen:hover {
+    color: cyan;
+}
+
+.fa-deviantart {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-deviantart:hover {
+    color: cyan;
+}
+
+.fa-snapchat-ghost {
+    background: yellow;
+    color: magenta;
+}
+
+.fa-snapchat-ghost:hover {
+    color: cyan;
+}
+.awards {
+    background-color: darkmagenta;
+    height: 220px;
+    position: relative;
+    top: -3%;
+}
+
+/*Education, Employment, and Volunteer Work*/
+.education {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: yellow;
+}
+.employment {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: yellow;
+}
+.volunteer {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: darkmagenta;
+    color: yellow;
+}
+li {
+    color:yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+li:hover {
+    color: cyan;
+}
+
+
+/*Skills*/
+.computer {
+    background-color: darkmagenta;
+    height: 100%
+}
+#code {
+    position: relative;
+    left: 65px;
+}
+.hide {
+    visibility: hidden;
+}
+.html {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.html:hover {
+    color: magenta;
+}
+.css {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.css:hover {
+    color: magenta;
+}
+.js {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.js:hover {
+    color: magenta;
+}
+
+.software {
+    background-color: darkmagenta;
+    height: 100%
+}
+.bgc {
+    background-color: yellow;
+}
+.bgc:hover {
+    background-color: white;
+}
+#design {
+    position: relative;
+    bottom: 10px;
+    left: 65px;
+}
+.ps {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.ps:hover {
+    color: magenta;
+}
+.ai {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.ai:hover {
+    color: magenta;
+}
+.id {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.id:hover {
+    color: magenta;
+}
+.acc {
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+.acc:hover {
+    color: magenta;
+}
+
+
+/*Hobbies*/
+.hobbies {
+    background-color: darkmagenta;
+    height: 110px;
+}
+.btn-group button {
+    background-color: darkmagenta;
+    border-color: darkmagenta;
+    font-family: 'Poppins', sans-serif;
+    color: yellow;
+    padding: 10px 28px;
+    cursor: initial;
+    float: center;
+    position: relative;
+    top: 15px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.btn-group button:not(:last-child) {
+    border-right: center;
+}
+.btn-group button:hover {
+    background-color: yellow;
+    color: magenta;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
